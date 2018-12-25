@@ -2,6 +2,9 @@
 
 The Docker container contains sixpack and sixpack-web server environment.
 
+The Sixpack Dashboard is running at port 8080.
+The Sixpack Server is running at port 8000.
+
 ## Simple Usage
 
 If you just run sixpack with docker, you can use trusted builds registered [Docker index][di],
@@ -15,8 +18,7 @@ Another example of deploying sixpack is:
     docker run -d -t --name sixpack \
                 -p 8000:8000 \
                 -p 8080:8080 \
-                -e SIXPACK_CONFIG_REDIS_HOST={YOUR_REDIS_HOST}
-                kirimemail/docker-sixpack
+                -e SIXPACK_CONFIG_REDIS_HOST={YOUR_REDIS_HOST} kirimemail/docker-sixpack
 
 ## Resources
 
